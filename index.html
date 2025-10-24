@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ostensible Labs</title>
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a, #1e293b, #3b82f6);
+      --text-color: #f1f5f9;
+      --accent-color: #60a5fa;
+      --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: var(--font-main);
+      color: var(--text-color);
+      background: var(--bg-gradient);
+      background-size: 300% 300%;
+      animation: gradientShift 12s ease infinite;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: -1px;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.25rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1.5rem;
+      font-size: 0.875rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.25rem; }
+      p { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Ostensible Labs</h1>
+    <p>Our first products are coming soon. Stay tuned!</p>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> Ostensible Labs. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

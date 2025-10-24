@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Ostensible Labs</title>
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a, #1e293b 50%, #334155);
+      --text-color: #f1f5f9;
+      --accent-color: #60a5fa;
+      --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: var(--font-main);
+      color: var(--text-color);
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-inline: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: var(--accent-color);
+    }
+
+    p {
+      margin: 0.75rem 0;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.875rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1.25rem; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.25rem; }
+      p  { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>KitchenKit Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> October 16, 2025</p>
+
+    <h2>1. Overview</h2>
+    <p>KitchenKit is developed and maintained by Ostensible Labs LLC (“we,” “our,” or “us”). We respect your privacy and are committed to transparency about how your data is handled.</p>
+
+    <h2>2. Data Collection and Storage</h2>
+    <p>KitchenKit does not collect, transmit, or store personal information on servers controlled by Ostensible Labs LLC. All app data—such as your pantry or grocery information—is stored locally on your device and, if enabled, securely synced through Apple’s CloudKit using your Apple ID. We cannot view, modify, or share this information.</p>
+    <p>You control all data through your device and iCloud settings.</p>
+
+    <h2>3. Analytics and Tracking</h2>
+    <p>KitchenKit does not use third-party analytics, advertising, or tracking tools. We receive only aggregate, anonymous performance metrics provided automatically by Apple (e.g., total installs or crash counts). These reports contain no personally identifiable information.</p>
+
+    <h2>4. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy as our app or legal obligations evolve. The latest version will always be available on our website and within the App Store listing.</p>
+
+    <h2>5. Contact</h2>
+    <p>For any privacy-related inquiries, contact Ostensible Labs LLC via the support link in KitchenKit's App Store listing.</p>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Ostensible Labs LLC. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
